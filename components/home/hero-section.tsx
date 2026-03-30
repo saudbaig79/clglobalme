@@ -1,38 +1,102 @@
+"use client"
+
 import Link from "next/link"
+import Image from "next/image"
+import { ArrowRight, Play } from "lucide-react"
 
 export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=2144&auto=format&fit=crop')",
-        }}
-      >
-        <div className="absolute inset-0 bg-black/70" />
+      {/* Background Video/Image */}
+      <div className="absolute inset-0">
+        <Image
+          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
+          alt="Modern city skyline"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/50" />
+      </div>
+
+      {/* Animated particles/dots */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-2 h-2 rounded-full bg-[#d4af37]/30 animate-float" />
+        <div className="absolute top-1/3 right-1/4 w-3 h-3 rounded-full bg-[#d4af37]/20 animate-float delay-300" />
+        <div className="absolute bottom-1/3 left-1/3 w-2 h-2 rounded-full bg-[#d4af37]/40 animate-float delay-500" />
+        <div className="absolute top-2/3 right-1/3 w-1.5 h-1.5 rounded-full bg-[#d4af37]/30 animate-float delay-700" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-          Welcome to CL Global Media
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
+        {/* Logo badge */}
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm mb-8 animate-fade-in-up">
+          <div className="relative w-6 h-6">
+            <Image
+              src="/images/logo.png"
+              alt="CL Global Media"
+              fill
+              className="object-contain"
+            />
+          </div>
+          <span className="text-white/80 text-sm font-medium">Welcome to CL Global Media</span>
+        </div>
+
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in-up delay-100">
+          Redefining{" "}
+          <span className="gradient-text font-serif italic">Outdoor</span>
+          <br />
+          Advertising Globally
         </h1>
-        <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-          Where we redefine outdoor advertising with our extensive network and partners.
+        
+        <p className="text-lg md:text-xl text-white/70 mb-10 max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-200">
+          Where innovation meets visibility. We connect brands with audiences through 
+          cutting-edge outdoor media solutions across the globe.
         </p>
-        <Link 
-          href="/services"
-          className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium px-8 py-3 rounded transition-colors"
-        >
-          Explore Our Services
-        </Link>
+
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up delay-300">
+          <Link 
+            href="/services"
+            className="group inline-flex items-center gap-2 px-8 py-4 bg-[#d4af37] hover:bg-[#b8982f] text-black font-semibold rounded-full transition-all duration-300 hover:shadow-xl hover:shadow-[#d4af37]/20"
+          >
+            Explore Our Services
+            <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
+          </Link>
+          <Link 
+            href="/contact"
+            className="group inline-flex items-center gap-2 px-8 py-4 bg-white/5 hover:bg-white/10 text-white font-medium rounded-full border border-white/20 hover:border-white/40 transition-all duration-300 backdrop-blur-sm"
+          >
+            <Play size={18} className="text-[#d4af37]" />
+            Get in Touch
+          </Link>
+        </div>
+
+        {/* Stats */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 pt-12 border-t border-white/10 animate-fade-in-up delay-500">
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold text-[#d4af37] mb-2">500+</div>
+            <div className="text-white/50 text-sm">Campaign Locations</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold text-[#d4af37] mb-2">50M+</div>
+            <div className="text-white/50 text-sm">Daily Impressions</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold text-[#d4af37] mb-2">25+</div>
+            <div className="text-white/50 text-sm">Countries Served</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold text-[#d4af37] mb-2">98%</div>
+            <div className="text-white/50 text-sm">Client Satisfaction</div>
+          </div>
+        </div>
       </div>
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white/30 rounded-full flex items-start justify-center pt-2">
-          <div className="w-1.5 h-3 bg-white/50 rounded-full" />
+        <div className="w-6 h-10 border-2 border-[#d4af37]/30 rounded-full flex items-start justify-center pt-2">
+          <div className="w-1.5 h-3 bg-[#d4af37]/50 rounded-full" />
         </div>
       </div>
     </section>

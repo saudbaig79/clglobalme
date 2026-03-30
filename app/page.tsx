@@ -10,6 +10,7 @@ import { TransportSection } from "@/components/home/transport-section"
 import { HappyClientsSection } from "@/components/home/happy-clients-section"
 import { AboutPreviewSection } from "@/components/home/about-preview-section"
 import { CampaignsSection } from "@/components/home/campaigns-section"
+import { CTASection } from "@/components/home/cta-section"
 
 export default function HomePage() {
   return (
@@ -25,6 +26,7 @@ export default function HomePage() {
       <HappyClientsSection />
       <AboutPreviewSection />
       <CampaignsSection />
+      <CTASection />
       <Footer />
     </main>
   )
