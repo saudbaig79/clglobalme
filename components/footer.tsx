@@ -8,6 +8,9 @@ const quickLinks = [
   { href: "/services", label: "Services" },
   { href: "/team", label: "Meet the Team" },
   { href: "/contact", label: "Contact" },
+  { href: "/privacy-policy", label: "Privacy Policy" },
+  { href: "/terms-and-conditions", label: "Terms & Conditions" },
+  { href: "/cancellation-refund-policy", label: "Cancellation/Refund" },
 ]
 
 const services = [
@@ -126,19 +129,22 @@ export function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-white/30 text-sm">
-              &copy; {new Date().getFullYear()} CL Global Media. All rights reserved.
-            </p>
-            <div className="flex gap-6 text-sm">
-              <a href="#" className="text-white/30 hover:text-white/60 transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-white/30 hover:text-white/60 transition-colors">
-                Terms of Service
-              </a>
+            <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+              <p className="text-white/30 text-sm">
+                &copy; {new Date().getFullYear()} CL Global Media. All rights reserved.
+              </p>
+              <div className="flex flex-wrap gap-6 text-sm justify-center">
+                <Link href="/privacy-policy" className="text-white/30 hover:text-white/60 transition-colors">
+                  Privacy Policy
+                </Link>
+                <Link href="/terms-and-conditions" className="text-white/30 hover:text-white/60 transition-colors">
+                  Terms & Conditions
+                </Link>
+                <Link href="/cancellation-refund-policy" className="text-white/30 hover:text-white/60 transition-colors">
+                  Cancellation/Refund
+                </Link>
+              </div>
             </div>
-          </div>
         </div>
       </div>
     </footer>
