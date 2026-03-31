@@ -1,6 +1,5 @@
 "use client"
 
-import { Linkedin, Mail } from "lucide-react"
 import { AnimatedSection } from "@/components/ui/animated-section"
 
 const ceo = {
@@ -71,14 +70,7 @@ export function TeamMembers() {
                 <p className="text-white/60 leading-relaxed">
                   {ceo.bio}
                 </p>
-                <div className="flex justify-center md:justify-start gap-3 mt-6">
-                  <a href="#" className="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-[#d4af37] transition-colors group">
-                    <Linkedin size={18} className="text-white/70 group-hover:text-black" />
-                  </a>
-                  <a href="#" className="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-[#d4af37] transition-colors group">
-                    <Mail size={18} className="text-white/70 group-hover:text-black" />
-                  </a>
-                </div>
+
               </div>
             </div>
           </div>
@@ -118,15 +110,7 @@ export function TeamMembers() {
                   <p className="text-[#d4af37] text-sm mb-4">{member.role}</p>
                   <p className="text-white/50 text-sm leading-relaxed flex-1">{member.bio}</p>
                   
-                  {/* Social icons */}
-                  <div className="flex justify-center gap-3 mt-6 pt-4 border-t border-zinc-800">
-                    <a href="#" className="w-9 h-9 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-[#d4af37] transition-colors group/icon">
-                      <Linkedin size={16} className="text-white/70 group-hover/icon:text-black" />
-                    </a>
-                    <a href="#" className="w-9 h-9 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-[#d4af37] transition-colors group/icon">
-                      <Mail size={16} className="text-white/70 group-hover/icon:text-black" />
-                    </a>
-                  </div>
+
                 </div>
               </div>
             </AnimatedSection>
