@@ -1,57 +1,40 @@
 "use client"
 
-import Image from "next/image"
-import { Linkedin, Twitter, Mail } from "lucide-react"
+import { Linkedin, Mail } from "lucide-react"
 import { AnimatedSection } from "@/components/ui/animated-section"
 
-const teamMembers = [
+const ceo = {
+  name: "Duncan McHugh",
+  role: "CEO",
+  title: "The Media Mogul Redefining Advertising",
+  bio: "Duncan McHugh is a powerhouse in media, advertising, and brand storytelling. As a media mogul and strategic mastermind, he has shaped high-impact campaigns, luxury brand collaborations, and global events that redefine industry standards. With a sharp eye for market trends and an unmatched network, Duncan transforms brands into cultural icons, ensuring every campaign captivates, influences, and delivers results.",
+  initials: "DM",
+}
+
+const leadershipTeam = [
   {
-    name: "Christopher Laurent",
-    role: "Founder & CEO",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1920&auto=format&fit=crop",
-    bio: "Visionary leader with 20+ years in global advertising and media.",
+    name: "John Hamilton",
+    role: "Head of Personnel",
+    bio: "With two decades in media and advertising, John ensures that CL Global Media's team is equipped with the best talent in the industry. His leadership fosters a high-performance culture, driving innovation in outdoor media.",
+    initials: "JH",
   },
   {
-    name: "Sarah Mitchell",
-    role: "Chief Operating Officer",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1920&auto=format&fit=crop",
-    bio: "Operations expert driving efficiency and excellence across all divisions.",
+    name: "Lucía Rodríguez",
+    role: "Head of Sales",
+    bio: "A dynamic sales strategist with a deep understanding of the outdoor advertising landscape, Lucía has successfully led multimillion-dollar campaigns. She specializes in building strong client relationships and maximizing revenue growth.",
+    initials: "LR",
   },
   {
-    name: "David Chen",
-    role: "Creative Director",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1920&auto=format&fit=crop",
-    bio: "Award-winning creative mind behind our most impactful campaigns.",
+    name: "Antoine Dubois",
+    role: "Head of Customer Service",
+    bio: "With extensive experience in media account management, Antoine ensures seamless client experiences. His expertise in customer relations and campaign execution guarantees smooth, results-driven advertising solutions.",
+    initials: "AD",
   },
   {
-    name: "Emily Rodriguez",
-    role: "Head of Strategy",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1920&auto=format&fit=crop",
-    bio: "Strategic thinker turning brand visions into measurable success.",
-  },
-  {
-    name: "James Wilson",
-    role: "Director of Partnerships",
-    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1920&auto=format&fit=crop",
-    bio: "Building and nurturing relationships with global media partners.",
-  },
-  {
-    name: "Lisa Thompson",
-    role: "Head of Digital",
-    image: "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?q=80&w=1920&auto=format&fit=crop",
-    bio: "Digital innovation expert leading our technology initiatives.",
-  },
-  {
-    name: "Michael Brown",
-    role: "Finance Director",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1920&auto=format&fit=crop",
-    bio: "Financial strategist ensuring sustainable growth and profitability.",
-  },
-  {
-    name: "Amanda Foster",
-    role: "Client Success Director",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1920&auto=format&fit=crop",
-    bio: "Dedicated to delivering exceptional client experiences and results.",
+    name: "Saud Baig",
+    role: "Head of Design",
+    bio: "Saud Baig brings a creative edge to outdoor media, crafting visually compelling campaigns that captivate audiences. His expertise in design innovation helps brands stand out in the competitive advertising space.",
+    initials: "SB",
   },
 ]
 
@@ -59,6 +42,49 @@ export function TeamMembers() {
   return (
     <section className="py-24 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* CEO Section */}
+        <AnimatedSection className="text-center mb-8">
+          <span className="inline-block px-4 py-1.5 bg-[#d4af37]/10 text-[#d4af37] text-sm font-medium rounded-full mb-4">
+            Founder & CEO
+          </span>
+        </AnimatedSection>
+
+        <AnimatedSection animation="fade-up" className="mb-24">
+          <div className="max-w-4xl mx-auto bg-zinc-900/50 rounded-3xl p-8 md:p-12 border border-zinc-800 hover:border-[#d4af37]/30 transition-all duration-500">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+              {/* CEO Avatar with Initials */}
+              <div className="flex-shrink-0">
+                <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-[#d4af37] to-[#b8960c] flex items-center justify-center shadow-2xl shadow-[#d4af37]/20">
+                  <span className="text-4xl md:text-5xl font-bold text-black font-serif">
+                    {ceo.initials}
+                  </span>
+                </div>
+              </div>
+              
+              {/* CEO Info */}
+              <div className="flex-1 text-center md:text-left">
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-1 font-serif">
+                  {ceo.name}
+                </h3>
+                <p className="text-[#d4af37] font-medium mb-2">{ceo.role}</p>
+                <p className="text-white/70 italic text-lg mb-4">{ceo.title}</p>
+                <p className="text-white/60 leading-relaxed">
+                  {ceo.bio}
+                </p>
+                <div className="flex justify-center md:justify-start gap-3 mt-6">
+                  <a href="#" className="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-[#d4af37] transition-colors group">
+                    <Linkedin size={18} className="text-white/70 group-hover:text-black" />
+                  </a>
+                  <a href="#" className="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-[#d4af37] transition-colors group">
+                    <Mail size={18} className="text-white/70 group-hover:text-black" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </AnimatedSection>
+
+        {/* Leadership Team Section */}
         <AnimatedSection className="text-center mb-16">
           <span className="inline-block px-4 py-1.5 bg-[#d4af37]/10 text-[#d4af37] text-sm font-medium rounded-full mb-4">
             Leadership
@@ -68,42 +94,40 @@ export function TeamMembers() {
           </h2>
         </AnimatedSection>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {teamMembers.map((member, index) => (
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {leadershipTeam.map((member, index) => (
             <AnimatedSection
               key={index}
               animation="fade-up"
               delay={index * 100}
             >
-              <div className="group text-center">
-                <div className="relative mb-6 overflow-hidden rounded-2xl">
-                  <div className="aspect-[3/4] relative">
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
+              <div className="group bg-zinc-900/50 rounded-2xl p-6 border border-zinc-800 hover:border-[#d4af37]/30 transition-all duration-500 h-full flex flex-col">
+                {/* Avatar with Initials */}
+                <div className="flex justify-center mb-6">
+                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#d4af37]/80 to-[#b8960c]/80 flex items-center justify-center shadow-lg group-hover:shadow-[#d4af37]/20 transition-shadow duration-500">
+                    <span className="text-2xl font-bold text-black font-serif">
+                      {member.initials}
+                    </span>
                   </div>
-                  {/* Social icons overlay */}
-                  <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <a href="#" className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-[#d4af37] transition-colors">
-                      <Linkedin size={18} className="text-white" />
+                </div>
+                
+                <div className="text-center flex-1 flex flex-col">
+                  <h3 className="text-lg font-semibold text-white mb-1 group-hover:text-[#d4af37] transition-colors font-serif">
+                    {member.name}
+                  </h3>
+                  <p className="text-[#d4af37] text-sm mb-4">{member.role}</p>
+                  <p className="text-white/50 text-sm leading-relaxed flex-1">{member.bio}</p>
+                  
+                  {/* Social icons */}
+                  <div className="flex justify-center gap-3 mt-6 pt-4 border-t border-zinc-800">
+                    <a href="#" className="w-9 h-9 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-[#d4af37] transition-colors group/icon">
+                      <Linkedin size={16} className="text-white/70 group-hover/icon:text-black" />
                     </a>
-                    <a href="#" className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-[#d4af37] transition-colors">
-                      <Twitter size={18} className="text-white" />
-                    </a>
-                    <a href="#" className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-[#d4af37] transition-colors">
-                      <Mail size={18} className="text-white" />
+                    <a href="#" className="w-9 h-9 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-[#d4af37] transition-colors group/icon">
+                      <Mail size={16} className="text-white/70 group-hover/icon:text-black" />
                     </a>
                   </div>
                 </div>
-                <h3 className="text-lg font-semibold text-white mb-1 group-hover:text-[#d4af37] transition-colors">
-                  {member.name}
-                </h3>
-                <p className="text-[#d4af37] text-sm mb-2">{member.role}</p>
-                <p className="text-white/50 text-sm">{member.bio}</p>
               </div>
             </AnimatedSection>
           ))}
