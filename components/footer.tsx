@@ -8,9 +8,16 @@ const quickLinks = [
   { href: "/services", label: "Services" },
   { href: "/team", label: "Meet the Team" },
   { href: "/contact", label: "Contact" },
+]
+
+const legalLinks = [
   { href: "/privacy-policy", label: "Privacy Policy" },
   { href: "/terms-and-conditions", label: "Terms & Conditions" },
   { href: "/cancellation-refund-policy", label: "Cancellation/Refund" },
+  { href: "/cookie-policy", label: "Cookie Policy" },
+  { href: "/disclaimer", label: "Legal Disclaimer" },
+  { href: "/accessibility-statement", label: "Accessibility" },
+  { href: "/data-request", label: "Data Rights" },
 ]
 
 const services = [
@@ -105,7 +112,7 @@ export function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="lg:col-span-1">
             <h4 className="text-white font-semibold mb-6 text-lg">Contact Us</h4>
             <ul className="space-y-4">
               <li>
@@ -126,25 +133,33 @@ export function Footer() {
         </div>
       </div>
 
+      {/* Legal Section */}
+      <div className="border-t border-white/5 bg-white/2.5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="mb-6">
+            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Legal Documents & Policies</h4>
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+              {legalLinks.map((link) => (
+                <Link 
+                  key={link.href}
+                  href={link.href}
+                  className="text-white/60 hover:text-[#d4af37] text-xs transition-colors inline-flex items-center gap-2 group"
+                >
+                  <span className="w-1 h-1 rounded-full bg-[#d4af37]/30 group-hover:bg-[#d4af37] transition-colors" />
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Bottom Bar */}
       <div className="border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-              <p className="text-white/30 text-sm">
-                &copy; {new Date().getFullYear()} CL Global Media. All rights reserved.
-              </p>
-              <div className="flex flex-wrap gap-6 text-sm justify-center">
-                <Link href="/privacy-policy" className="text-white/30 hover:text-white/60 transition-colors">
-                  Privacy Policy
-                </Link>
-                <Link href="/terms-and-conditions" className="text-white/30 hover:text-white/60 transition-colors">
-                  Terms & Conditions
-                </Link>
-                <Link href="/cancellation-refund-policy" className="text-white/30 hover:text-white/60 transition-colors">
-                  Cancellation/Refund
-                </Link>
-              </div>
-            </div>
+            <p className="text-white/30 text-sm text-center">
+              &copy; {new Date().getFullYear()} CL Global Media. All rights reserved.
+            </p>
         </div>
       </div>
     </footer>
