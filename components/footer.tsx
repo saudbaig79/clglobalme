@@ -33,7 +33,7 @@ export function Footer() {
     <footer className="bg-[#0a0a0a] border-t border-white/5">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-6">
@@ -96,26 +96,8 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Legal Links */}
+          {/* Services */}
           <div>
-            <h4 className="text-white font-semibold mb-6 text-lg">Legal</h4>
-            <ul className="space-y-3">
-              {legalLinks.map((link) => (
-                <li key={link.href}>
-                  <Link 
-                    href={link.href} 
-                    className="text-white/50 hover:text-[#d4af37] text-sm transition-colors inline-flex items-center gap-2 group"
-                  >
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#d4af37]/50 group-hover:bg-[#d4af37] transition-colors" />
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Services - Hidden on smaller screens to make room for Legal */}
-          <div className="hidden lg:block">
             <h4 className="text-white font-semibold mb-6 text-lg">Our Services</h4>
             <ul className="space-y-3">
               {services.map((service) => (
@@ -151,31 +133,33 @@ export function Footer() {
         </div>
       </div>
 
+      {/* Legal Section */}
+      <div className="border-t border-white/5 bg-white/2.5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="mb-6">
+            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Legal Documents & Policies</h4>
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+              {legalLinks.map((link) => (
+                <Link 
+                  key={link.href}
+                  href={link.href}
+                  className="text-white/60 hover:text-[#d4af37] text-xs transition-colors inline-flex items-center gap-2 group"
+                >
+                  <span className="w-1 h-1 rounded-full bg-[#d4af37]/30 group-hover:bg-[#d4af37] transition-colors" />
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Bottom Bar */}
       <div className="border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-              <p className="text-white/30 text-sm">
-                &copy; {new Date().getFullYear()} CL Global Media. All rights reserved.
-              </p>
-              <div className="flex flex-wrap gap-6 text-sm justify-center">
-                <Link href="/privacy-policy" className="text-white/30 hover:text-white/60 transition-colors">
-                  Privacy
-                </Link>
-                <Link href="/terms-and-conditions" className="text-white/30 hover:text-white/60 transition-colors">
-                  Terms
-                </Link>
-                <Link href="/disclaimer" className="text-white/30 hover:text-white/60 transition-colors">
-                  Disclaimer
-                </Link>
-                <Link href="/accessibility-statement" className="text-white/30 hover:text-white/60 transition-colors">
-                  Accessibility
-                </Link>
-                <Link href="/data-request" className="text-white/30 hover:text-white/60 transition-colors">
-                  Data Rights
-                </Link>
-              </div>
-            </div>
+            <p className="text-white/30 text-sm text-center">
+              &copy; {new Date().getFullYear()} CL Global Media. All rights reserved.
+            </p>
         </div>
       </div>
     </footer>
