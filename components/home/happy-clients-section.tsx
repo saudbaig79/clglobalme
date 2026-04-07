@@ -7,20 +7,14 @@ const testimonials = [
   {
     quote: "CL Global Media transformed our advertising strategy. Their innovative approach and extensive network delivered exceptional results.",
     author: "Sarah Johnson",
-    role: "Marketing Director",
-    company: "TechFlow Inc.",
   },
   {
     quote: "The team's dedication to our success was evident from day one. They exceeded all expectations with their creative solutions.",
     author: "Michael Chen",
-    role: "Brand Manager",
-    company: "Luxe Brands",
   },
   {
-    quote: "Outstanding service and remarkable reach. Our brand visibility increased by 300% within the first quarter.",
+    quote: "Outstanding service and remarkable reach. Our brand visibility increased significantly within the first quarter.",
     author: "Emma Williams",
-    role: "CEO",
-    company: "StartUp Hub",
   },
 ]
 
@@ -61,8 +55,6 @@ export function HappyClientsSection() {
                 </p>
                 <div className="border-t border-white/10 pt-6">
                   <p className="text-white font-semibold">{testimonial.author}</p>
-                  <p className="text-[#d4af37] text-sm">{testimonial.role}</p>
-                  <p className="text-white/50 text-sm">{testimonial.company}</p>
                 </div>
               </div>
             </AnimatedSection>

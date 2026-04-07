@@ -1,6 +1,5 @@
 import Link from "next/link"
-import Image from "next/image"
-import { Mail, Phone, MapPin, Linkedin, Twitter, Instagram } from "lucide-react"
+import { Mail, MapPin } from "lucide-react"
 
 const quickLinks = [
   { href: "/", label: "Home" },
@@ -37,14 +36,6 @@ export function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-6">
-              <div className="relative w-12 h-12">
-                <Image
-                  src="/images/logo.png"
-                  alt="CL Global Media Logo"
-                  fill
-                  className="object-contain"
-                />
-              </div>
               <span className="text-xl font-semibold text-white">
                 <span className="text-[#d4af37]">CL</span> Global Media
               </span>
@@ -53,29 +44,7 @@ export function Footer() {
               Redefining outdoor advertising with our extensive network and partners. 
               Your trusted partner in building powerful advertising campaigns worldwide.
             </p>
-            <div className="flex gap-4">
-              <a 
-                href="#" 
-                className="w-10 h-10 rounded-full bg-white/5 hover:bg-[#d4af37] flex items-center justify-center transition-all duration-300 group"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={18} className="text-white/60 group-hover:text-black" />
-              </a>
-              <a 
-                href="#" 
-                className="w-10 h-10 rounded-full bg-white/5 hover:bg-[#d4af37] flex items-center justify-center transition-all duration-300 group"
-                aria-label="Twitter"
-              >
-                <Twitter size={18} className="text-white/60 group-hover:text-black" />
-              </a>
-              <a 
-                href="#" 
-                className="w-10 h-10 rounded-full bg-white/5 hover:bg-[#d4af37] flex items-center justify-center transition-all duration-300 group"
-                aria-label="Instagram"
-              >
-                <Instagram size={18} className="text-white/60 group-hover:text-black" />
-              </a>
-            </div>
+
           </div>
 
           {/* Quick Links */}
@@ -126,7 +95,7 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-3 text-white/50 text-sm">
                 <MapPin size={18} className="text-[#d4af37] mt-0.5 flex-shrink-0" />
-                <span>Global Operations</span>
+                <span>99 Wall Street<br/>New York 10005<br/>USA</span>
               </li>
             </ul>
           </div>

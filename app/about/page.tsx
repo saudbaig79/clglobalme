@@ -57,7 +57,7 @@ export default function AboutPage() {
                   Our Approach
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-serif">
-                  Redefining the Way We <span className="gradient-text">Advertise</span>
+                  Attention to <span className="gradient-text">Detail</span>
                 </h2>
                 <p className="text-white/60 leading-relaxed text-lg mb-8">
                   At CL Global Media, we believe that advertising should be more than just getting your brand in front of people. Our approach is to create meaningful connections between our clients and their customers.
@@ -98,20 +98,8 @@ export default function AboutPage() {
       {/* Stats Section */}
       <section className="py-20 bg-gradient-to-r from-[#d4af37] via-[#f4e4a6] to-[#d4af37]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              { value: "25+", label: "Countries" },
-              { value: "500+", label: "Campaigns" },
-              { value: "50M+", label: "Daily Reach" },
-              { value: "98%", label: "Satisfaction" },
-            ].map((stat, index) => (
-              <AnimatedSection key={index} animation="scale" delay={index * 100}>
-                <div className="text-center">
-                  <p className="text-4xl md:text-5xl font-bold text-black mb-2">{stat.value}</p>
-                  <p className="text-black/70">{stat.label}</p>
-                </div>
-              </AnimatedSection>
-            ))}
+          <div className="text-center">
+            <p className="text-black/70 text-lg">Building powerful advertising campaigns globally with our comprehensive network and creative expertise.</p>
           </div>
         </div>
       </section>

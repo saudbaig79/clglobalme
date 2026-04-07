@@ -78,10 +78,8 @@ export default function CancellationRefundPolicy() {
 
             <section>
               <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">4. Contact for Cancellations & Refunds</h2>
-              <p className="text-justify mb-4">To request a cancellation or refund, please contact our support team at:</p>
+              <p className="text-justify mb-4">To request a cancellation or refund, please contact our support team through our Contact Us page.</p>
               <div className="bg-zinc-900 p-6 rounded-lg border border-zinc-800 space-y-2">
-                <p><span className="font-semibold text-white">Email:</span> clglobalmediausa@gmail.com</p>
-                <p><span className="font-semibold text-white">Phone:</span> +1 307 357 8377</p>
                 <p className="text-sm">Please include your order number, campaign details, and a brief explanation of your request.</p>
               </div>
             </section>
