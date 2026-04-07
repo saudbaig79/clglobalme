@@ -30,22 +30,9 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
-        {/* Logo badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm mb-8 animate-fade-in-up">
-          <div className="relative w-6 h-6">
-            <Image
-              src="/images/logo.png"
-              alt="CL Global Media"
-              fill
-              className="object-contain"
-            />
-          </div>
-          <span className="text-white/80 text-sm font-medium">Welcome to CL Global Media</span>
-        </div>
-
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in-up delay-100">
           Redefining{" "}
-          <span className="gradient-text font-serif italic">Outdoor</span>
+          <span className="gradient-text font-sans italic">Outdoor</span>
           <br />
           Advertising Globally
         </h1>
@@ -72,25 +59,7 @@ export function HeroSection() {
           </Link>
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 pt-12 border-t border-white/10 animate-fade-in-up delay-500">
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-[#d4af37] mb-2">500+</div>
-            <div className="text-white/50 text-sm">Campaign Locations</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-[#d4af37] mb-2">50M+</div>
-            <div className="text-white/50 text-sm">Daily Impressions</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-[#d4af37] mb-2">25+</div>
-            <div className="text-white/50 text-sm">Countries Served</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-[#d4af37] mb-2">98%</div>
-            <div className="text-white/50 text-sm">Client Satisfaction</div>
-          </div>
-        </div>
+
       </div>
 
       {/* Scroll indicator */}

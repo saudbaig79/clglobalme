@@ -25,13 +25,6 @@ export default function CancellationRefundPolicy() {
                 <li>Once a campaign has been scheduled, produced, or published, it cannot be canceled and will be billed in full</li>
               </ul>
 
-              <h3 className="text-xl font-semibold text-white mt-4 mb-3">1.2 Subscription Services</h3>
-              <ul className="list-disc list-inside space-y-2 ml-4">
-                <li>Subscription-based services can be canceled at any time</li>
-                <li>Cancellations will take effect in the next billing cycle</li>
-                <li>No refunds will be issued for the current period</li>
-              </ul>
-
               <h3 className="text-xl font-semibold text-white mt-4 mb-3">1.3 Event & Production Services</h3>
               <ul className="list-disc list-inside space-y-2 ml-4">
                 <li>Event-related services require at least 7 days' notice for cancellations</li>
@@ -78,10 +71,8 @@ export default function CancellationRefundPolicy() {
 
             <section>
               <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">4. Contact for Cancellations & Refunds</h2>
-              <p className="text-justify mb-4">To request a cancellation or refund, please contact our support team at:</p>
+              <p className="text-justify mb-4">To request a cancellation or refund, please contact our support team through our Contact Us page.</p>
               <div className="bg-zinc-900 p-6 rounded-lg border border-zinc-800 space-y-2">
-                <p><span className="font-semibold text-white">Email:</span> clglobalmediausa@gmail.com</p>
-                <p><span className="font-semibold text-white">Phone:</span> +1 307 357 8377</p>
                 <p className="text-sm">Please include your order number, campaign details, and a brief explanation of your request.</p>
               </div>
             </section>

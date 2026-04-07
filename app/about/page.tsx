@@ -30,7 +30,7 @@ export default function AboutPage() {
           <span className="inline-block px-4 py-1.5 bg-[#d4af37]/10 text-[#d4af37] text-sm font-medium rounded-full mb-6 animate-fade-in-up">
             About Us
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in-up delay-100 font-serif">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in-up delay-100 font-sans">
             Delivering <span className="gradient-text">Legendary</span><br />
             Advertising Campaigns
           </h1>
@@ -56,7 +56,7 @@ export default function AboutPage() {
                 <span className="inline-block px-4 py-1.5 bg-[#d4af37]/10 text-[#d4af37] text-sm font-medium rounded-full mb-6">
                   Our Approach
                 </span>
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-serif">
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-sans">
                   Redefining the Way We <span className="gradient-text">Advertise</span>
                 </h2>
                 <p className="text-white/60 leading-relaxed text-lg mb-8">
@@ -98,20 +98,8 @@ export default function AboutPage() {
       {/* Stats Section */}
       <section className="py-20 bg-gradient-to-r from-[#d4af37] via-[#f4e4a6] to-[#d4af37]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              { value: "25+", label: "Countries" },
-              { value: "500+", label: "Campaigns" },
-              { value: "50M+", label: "Daily Reach" },
-              { value: "98%", label: "Satisfaction" },
-            ].map((stat, index) => (
-              <AnimatedSection key={index} animation="scale" delay={index * 100}>
-                <div className="text-center">
-                  <p className="text-4xl md:text-5xl font-bold text-black mb-2">{stat.value}</p>
-                  <p className="text-black/70">{stat.label}</p>
-                </div>
-              </AnimatedSection>
-            ))}
+          <div className="text-center">
+            <p className="text-black/70 text-lg">Building powerful advertising campaigns globally with our comprehensive network and creative expertise.</p>
           </div>
         </div>
       </section>
@@ -123,7 +111,7 @@ export default function AboutPage() {
             <span className="inline-block px-4 py-1.5 bg-[#d4af37]/10 text-[#d4af37] text-sm font-medium rounded-full mb-4">
               Latest Updates
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white font-serif">
+            <h2 className="text-3xl md:text-4xl font-bold text-white font-sans">
               CL Global Media in the <span className="gradient-text">Press</span>
             </h2>
           </AnimatedSection>
@@ -131,7 +119,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { title: "Expanding Global Reach", desc: "New partnerships across European markets" },
-              { title: "Innovation Award 2024", desc: "Recognized for digital advertising excellence" },
+              { title: "Innovation Award 2026", desc: "Recognized for digital advertising excellence" },
               { title: "Sustainability Initiative", desc: "Commitment to eco-friendly advertising" },
             ].map((item, index) => (
               <AnimatedSection key={index} animation="fade-up" delay={index * 150}>

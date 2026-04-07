@@ -54,7 +54,7 @@ export default function ContactPage() {
           <span className="inline-block px-4 py-1.5 bg-[#d4af37]/10 text-[#d4af37] text-sm font-medium rounded-full mb-6 animate-fade-in-up">
             Get in Touch
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in-up delay-100 font-serif">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in-up delay-100 font-sans">
             <span className="gradient-text">Contact</span> Us
           </h1>
           <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto animate-fade-in-up delay-200">
@@ -73,7 +73,7 @@ export default function ContactPage() {
                 <span className="inline-block px-4 py-1.5 bg-[#d4af37]/10 text-[#d4af37] text-sm font-medium rounded-full mb-6">
                   Contact Information
                 </span>
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-serif">
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-sans">
                   Let&apos;s <span className="gradient-text">Chat</span>
                 </h2>
                 <p className="text-white/60 leading-relaxed mb-12">
@@ -104,7 +104,9 @@ export default function ContactPage() {
                     <div>
                       <h3 className="text-white font-semibold mb-1">Location</h3>
                       <p className="text-white/60">
-                        Global Operations
+                        99 Wall Street<br/>
+                        New York 10005<br/>
+                        USA
                       </p>
                     </div>
                   </div>

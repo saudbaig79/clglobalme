@@ -54,7 +54,7 @@ export function TeamMembers() {
               {/* CEO Avatar with Initials */}
               <div className="flex-shrink-0">
                 <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-[#d4af37] to-[#b8960c] flex items-center justify-center shadow-2xl shadow-[#d4af37]/20">
-                  <span className="text-4xl md:text-5xl font-bold text-black font-serif">
+                  <span className="text-4xl md:text-5xl font-bold text-black font-sans">
                     {ceo.initials}
                   </span>
                 </div>
@@ -62,7 +62,7 @@ export function TeamMembers() {
               
               {/* CEO Info */}
               <div className="flex-1 text-center md:text-left">
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-1 font-serif">
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-1 font-sans">
                   {ceo.name}
                 </h3>
                 <p className="text-[#d4af37] font-medium mb-2">{ceo.role}</p>
@@ -81,7 +81,7 @@ export function TeamMembers() {
           <span className="inline-block px-4 py-1.5 bg-[#d4af37]/10 text-[#d4af37] text-sm font-medium rounded-full mb-4">
             Leadership
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-white font-serif">
+          <h2 className="text-3xl md:text-4xl font-bold text-white font-sans">
             Our <span className="gradient-text">Leadership Team</span>
           </h2>
         </AnimatedSection>
@@ -97,14 +97,14 @@ export function TeamMembers() {
                 {/* Avatar with Initials */}
                 <div className="flex justify-center mb-6">
                   <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#d4af37]/80 to-[#b8960c]/80 flex items-center justify-center shadow-lg group-hover:shadow-[#d4af37]/20 transition-shadow duration-500">
-                    <span className="text-2xl font-bold text-black font-serif">
+                    <span className="text-2xl font-bold text-black font-sans">
                       {member.initials}
                     </span>
                   </div>
                 </div>
                 
                 <div className="text-center flex-1 flex flex-col">
-                  <h3 className="text-lg font-semibold text-white mb-1 group-hover:text-[#d4af37] transition-colors font-serif">
+                  <h3 className="text-lg font-semibold text-white mb-1 group-hover:text-[#d4af37] transition-colors font-sans">
                     {member.name}
                   </h3>
                   <p className="text-[#d4af37] text-sm mb-4">{member.role}</p>

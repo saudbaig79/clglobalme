@@ -145,15 +145,13 @@ export default function AccessibilityStatement() {
             <section>
               <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">Accessibility Support</h2>
               <p className="text-justify mb-4">
-                If you have accessibility questions or need assistance navigating our website, please contact us:
+                If you have accessibility questions or need assistance navigating our website, please contact us through our Contact Us page.
               </p>
               <div className="bg-zinc-900 p-6 rounded-lg border border-zinc-800">
                 <p className="font-semibold text-white mb-2">CL GLOBAL MEDIA LLC</p>
-                <p className="text-white/60">Email: clglobalmediausa@gmail.com</p>
-                <p className="text-white/60">Phone: +1 307 357 8377</p>
-                <p className="text-white/60">99 Wall Street</p>
-                <p className="text-white/60">New York 10005</p>
-                <p className="text-white/60">USA</p>
+                <p>99 Wall Street</p>
+                <p>New York 10005</p>
+                <p>USA</p>
               </div>
             </section>
 
