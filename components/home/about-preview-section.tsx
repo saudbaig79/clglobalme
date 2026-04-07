@@ -32,11 +32,7 @@ export function AboutPreviewSection() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-tr from-black/40 to-transparent" />
               </div>
-              {/* Floating stats card */}
-              <div className="absolute -bottom-8 -right-8 bg-[#d4af37] rounded-2xl p-6 shadow-2xl">
-                <p className="text-black text-4xl font-bold">✓</p>
-                <p className="text-black/70 text-sm">Attention to Detail</p>
-              </div>
+              {/* Floating stats card - removed */}
             </div>
           </AnimatedSection>
 
@@ -46,7 +42,7 @@ export function AboutPreviewSection() {
               <span className="inline-block px-4 py-1.5 bg-[#d4af37]/10 text-[#d4af37] text-sm font-medium rounded-full mb-6">
                 About Us
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-serif">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-sans">
                 Transforming How Brands{" "}
                 <span className="gradient-text">Advertise</span>
               </h2>

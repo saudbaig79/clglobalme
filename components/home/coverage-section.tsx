@@ -13,7 +13,7 @@ export function CoverageSection() {
           <span className="inline-block px-4 py-1.5 bg-[#d4af37]/10 text-[#d4af37] text-sm font-medium rounded-full mb-4">
             Global Reach
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-white font-serif">
+          <h2 className="text-3xl md:text-4xl font-bold text-white font-sans">
             Our <span className="gradient-text">Coverage</span>
           </h2>
         </AnimatedSection>
@@ -35,7 +35,7 @@ export function CoverageSection() {
                 <div className="inline-block px-3 py-1 bg-[#d4af37]/20 text-[#d4af37] text-xs font-medium rounded-full mb-4">
                   Worldwide
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 font-serif">
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 font-sans">
                   International Coverage
                 </h3>
                 <p className="text-white/70 mb-6 leading-relaxed">
@@ -68,7 +68,7 @@ export function CoverageSection() {
                 <div className="inline-block px-3 py-1 bg-[#d4af37]/20 text-[#d4af37] text-xs font-medium rounded-full mb-4">
                   Local Markets
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 font-serif">
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 font-sans">
                   Localized Impact
                 </h3>
                 <p className="text-white/70 mb-6 leading-relaxed">

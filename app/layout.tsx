@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Poppins, Playfair_Display } from 'next/font/google'
+import { Poppins, Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
@@ -9,10 +9,10 @@ const poppins = Poppins({
   variable: '--font-poppins'
 })
 
-const playfair = Playfair_Display({ 
+const inter = Inter({ 
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: '--font-playfair'
+  weight: ["300", "400", "500", "600", "700"],
+  variable: '--font-inter'
 })
 
 export const metadata: Metadata = {
@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth" data-scroll-behavior="smooth">
-      <body className={`${poppins.variable} ${playfair.variable} font-sans antialiased bg-black text-white`}>
+      <body className={`${poppins.variable} ${inter.variable} font-sans antialiased bg-black text-white`}>
         {children}
         <Analytics />
       </body>

@@ -32,7 +32,7 @@ export function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in-up delay-100">
           Redefining{" "}
-          <span className="gradient-text font-serif italic">Outdoor</span>
+          <span className="gradient-text font-sans italic">Outdoor</span>
           <br />
           Advertising Globally
         </h1>

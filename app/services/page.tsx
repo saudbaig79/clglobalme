@@ -78,7 +78,7 @@ export default function ServicesPage() {
           <span className="inline-block px-4 py-1.5 bg-[#d4af37]/10 text-[#d4af37] text-sm font-medium rounded-full mb-6 animate-fade-in-up">
             What We Offer
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in-up delay-100 font-serif">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in-up delay-100 font-sans">
             Our <span className="gradient-text">Services</span>
           </h1>
           <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto animate-fade-in-up delay-200">
@@ -94,7 +94,7 @@ export default function ServicesPage() {
             <span className="inline-block px-4 py-1.5 bg-[#d4af37]/10 text-[#d4af37] text-sm font-medium rounded-full mb-4">
               Digital Marketing
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white font-serif">
+            <h2 className="text-3xl md:text-4xl font-bold text-white font-sans">
               Digital <span className="gradient-text">Services</span>
             </h2>
           </AnimatedSection>
@@ -132,7 +132,7 @@ export default function ServicesPage() {
                 <span className="inline-block px-4 py-1.5 bg-[#d4af37]/10 text-[#d4af37] text-sm font-medium rounded-full mb-6">
                   Online Presence
                 </span>
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-serif">
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-sans">
                   Online <span className="gradient-text">Advertising</span>
                 </h2>
                 <p className="text-white/60 leading-relaxed mb-6">
@@ -178,7 +178,7 @@ export default function ServicesPage() {
             <span className="inline-block px-4 py-1.5 bg-[#d4af37]/10 text-[#d4af37] text-sm font-medium rounded-full mb-4">
               Traditional Media
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-serif">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-sans">
               Outdoor <span className="gradient-text">Media</span>
             </h2>
             <p className="text-white/60 leading-relaxed max-w-3xl">
@@ -215,7 +215,7 @@ export default function ServicesPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center">
             <div className="p-12 rounded-3xl gold-border bg-[#0a0a0a]">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-serif">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-sans">
                 Ready to Get <span className="gradient-text">Started?</span>
               </h2>
               <p className="text-white/60 leading-relaxed mb-8 max-w-2xl mx-auto">

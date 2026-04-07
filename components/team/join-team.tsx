@@ -16,7 +16,7 @@ export function JoinTeam() {
             <span className="inline-block px-4 py-1.5 bg-[#d4af37]/10 text-[#d4af37] text-sm font-medium rounded-full mb-6">
               Careers
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-serif">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-sans">
               Join Our <span className="gradient-text">Growing Team</span>
             </h2>
             <p className="text-white/60 leading-relaxed mb-8 max-w-2xl mx-auto">

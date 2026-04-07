@@ -38,7 +38,7 @@ export function WhyChooseUsSection() {
           <span className="inline-block px-4 py-1.5 bg-[#d4af37]/10 text-[#d4af37] text-sm font-medium rounded-full mb-4">
             Our Advantage
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-white font-serif">
+          <h2 className="text-3xl md:text-4xl font-bold text-white font-sans">
             Why <span className="gradient-text">Choose Us</span>
           </h2>
         </AnimatedSection>

@@ -33,7 +33,7 @@ export function HappyClientsSection() {
               <Star key={i} className="w-6 h-6 text-black fill-black" />
             ))}
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold text-black font-serif">
+          <h2 className="text-3xl md:text-5xl font-bold text-black font-sans">
             Happy Clients
           </h2>
           <p className="text-black/70 mt-4 text-lg">

@@ -17,7 +17,7 @@ export function IntroSection() {
         </AnimatedSection>
         
         <AnimatedSection animation="fade-up" delay={100}>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8 leading-tight font-serif">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8 leading-tight font-sans">
             Connecting Brands with{" "}
             <span className="gradient-text">Audiences Worldwide</span>
           </h2>

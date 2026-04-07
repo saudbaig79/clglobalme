@@ -30,7 +30,7 @@ export default function AboutPage() {
           <span className="inline-block px-4 py-1.5 bg-[#d4af37]/10 text-[#d4af37] text-sm font-medium rounded-full mb-6 animate-fade-in-up">
             About Us
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in-up delay-100 font-serif">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in-up delay-100 font-sans">
             Delivering <span className="gradient-text">Legendary</span><br />
             Advertising Campaigns
           </h1>
@@ -56,7 +56,7 @@ export default function AboutPage() {
                 <span className="inline-block px-4 py-1.5 bg-[#d4af37]/10 text-[#d4af37] text-sm font-medium rounded-full mb-6">
                   Our Approach
                 </span>
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-serif">
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-sans">
                   Redefining the Way We <span className="gradient-text">Advertise</span>
                 </h2>
                 <p className="text-white/60 leading-relaxed text-lg mb-8">
@@ -111,7 +111,7 @@ export default function AboutPage() {
             <span className="inline-block px-4 py-1.5 bg-[#d4af37]/10 text-[#d4af37] text-sm font-medium rounded-full mb-4">
               Latest Updates
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white font-serif">
+            <h2 className="text-3xl md:text-4xl font-bold text-white font-sans">
               CL Global Media in the <span className="gradient-text">Press</span>
             </h2>
           </AnimatedSection>

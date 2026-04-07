@@ -24,7 +24,7 @@ export function CTASection() {
           <span className="inline-block px-4 py-1.5 bg-[#d4af37]/10 text-[#d4af37] text-sm font-medium rounded-full mb-6">
             Start Your Journey
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 font-serif leading-tight">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 font-sans leading-tight">
             Ready to Make Your Brand{" "}
             <span className="gradient-text">Unforgettable?</span>
           </h2>

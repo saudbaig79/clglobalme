@@ -34,7 +34,7 @@ export function TeamValues() {
           <span className="inline-block px-4 py-1.5 bg-[#d4af37]/10 text-[#d4af37] text-sm font-medium rounded-full mb-4">
             What Drives Us
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-white font-serif">
+          <h2 className="text-3xl md:text-4xl font-bold text-white font-sans">
             Our Core <span className="gradient-text">Values</span>
           </h2>
         </AnimatedSection>
