@@ -34,8 +34,8 @@ export function AboutPreviewSection() {
               </div>
               {/* Floating stats card */}
               <div className="absolute -bottom-8 -right-8 bg-[#d4af37] rounded-2xl p-6 shadow-2xl">
-                <p className="text-black text-4xl font-bold">15+</p>
-                <p className="text-black/70 text-sm">Years of Excellence</p>
+                <p className="text-black text-4xl font-bold">✓</p>
+                <p className="text-black/70 text-sm">Attention to Detail</p>
               </div>
             </div>
           </AnimatedSection>

@@ -104,7 +104,9 @@ export default function ContactPage() {
                     <div>
                       <h3 className="text-white font-semibold mb-1">Location</h3>
                       <p className="text-white/60">
-                        Global Operations
+                        99 Wall Street<br/>
+                        New York 10005<br/>
+                        USA
                       </p>
                     </div>
                   </div>

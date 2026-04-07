@@ -25,13 +25,6 @@ export default function CancellationRefundPolicy() {
                 <li>Once a campaign has been scheduled, produced, or published, it cannot be canceled and will be billed in full</li>
               </ul>
 
-              <h3 className="text-xl font-semibold text-white mt-4 mb-3">1.2 Subscription Services</h3>
-              <ul className="list-disc list-inside space-y-2 ml-4">
-                <li>Subscription-based services can be canceled at any time</li>
-                <li>Cancellations will take effect in the next billing cycle</li>
-                <li>No refunds will be issued for the current period</li>
-              </ul>
-
               <h3 className="text-xl font-semibold text-white mt-4 mb-3">1.3 Event & Production Services</h3>
               <ul className="list-disc list-inside space-y-2 ml-4">
                 <li>Event-related services require at least 7 days' notice for cancellations</li>

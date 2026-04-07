@@ -57,7 +57,7 @@ export default function AboutPage() {
                   Our Approach
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-serif">
-                  Attention to <span className="gradient-text">Detail</span>
+                  Redefining the Way We <span className="gradient-text">Advertise</span>
                 </h2>
                 <p className="text-white/60 leading-relaxed text-lg mb-8">
                   At CL Global Media, we believe that advertising should be more than just getting your brand in front of people. Our approach is to create meaningful connections between our clients and their customers.
@@ -119,7 +119,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { title: "Expanding Global Reach", desc: "New partnerships across European markets" },
-              { title: "Innovation Award 2024", desc: "Recognized for digital advertising excellence" },
+              { title: "Innovation Award 2026", desc: "Recognized for digital advertising excellence" },
               { title: "Sustainability Initiative", desc: "Commitment to eco-friendly advertising" },
             ].map((item, index) => (
               <AnimatedSection key={index} animation="fade-up" delay={index * 150}>

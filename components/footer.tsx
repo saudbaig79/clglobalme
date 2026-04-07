@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Mail, MapPin } from "lucide-react"
 
 const quickLinks = [
@@ -36,6 +37,14 @@ export function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-6">
+              <div className="relative w-12 h-12">
+                <Image
+                  src="/images/logo.png"
+                  alt="CL Global Media Logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
               <span className="text-xl font-semibold text-white">
                 <span className="text-[#d4af37]">CL</span> Global Media
               </span>
