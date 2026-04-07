@@ -30,12 +30,16 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in-up delay-100">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-4 leading-tight animate-fade-in-up delay-100 tracking-tight">
+          <span className="text-[#d4af37]">CL</span> Global Media
+        </h1>
+
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold text-white mb-8 leading-tight animate-fade-in-up delay-150">
           Redefining{" "}
           <span className="gradient-text font-sans italic">Outdoor</span>
           <br />
           Advertising Globally
-        </h1>
+        </h2>
         
         <p className="text-lg md:text-xl text-white/70 mb-10 max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-200">
           Where innovation meets visibility. We connect brands with audiences through 
