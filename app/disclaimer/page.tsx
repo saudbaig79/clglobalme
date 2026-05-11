@@ -18,14 +18,37 @@ export default function Disclaimer() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">1. No Professional Advice</h2>
+              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">1. General Disclaimer</h2>
+              <p className="text-justify mb-3">
+                The information contained on the clglobalmedia.com website (the "Site") is provided by CL Global Media LLC for general informational purposes only. All information on the Site is provided in good faith; however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site.
+              </p>
               <p className="text-justify">
-                The content, services, and information provided on our website are for informational purposes only and do not constitute professional advice. CL Global Media LLC does not provide legal, financial, tax, medical, or other professional advice. You should not rely on our website or services as a substitute for professional consultation. Always consult with qualified professionals before making decisions based on information provided on our Site.
+                Under no circumstance shall we have any liability to you for any loss or damage of any kind incurred as a result of the use of the Site or reliance on any information provided on the Site. Your use of the Site and your reliance on any information on the Site is solely at your own risk.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">2. "AS IS" Basis</h2>
+              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">2. No Professional Advice</h2>
+              <p className="text-justify mb-3">
+                The Site cannot and does not contain business, legal, financial, or other professional advice. The information is provided for general informational and educational purposes only and is not a substitute for professional advice. Accordingly, before taking any actions based upon such information, we encourage you to consult with appropriate professionals.
+              </p>
+              <p className="text-justify">
+                We do not provide any kind of legal, tax, investment, or financial advice. Do not use any content on this Site as a substitute for professional legal, tax, financial, or other advice. Always seek the advice of qualified professionals in the relevant field before making business decisions.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">3. Accuracy of Information</h2>
+              <p className="text-justify mb-3">
+                While we endeavor to keep the information on our Site current and correct, we make no representations, warranties, or guarantees, whether express or implied, that the content on the Site is accurate, complete, or up to date. Information may be changed or updated without notice.
+              </p>
+              <p className="text-justify">
+                Industry data, statistics, and market information referenced on the Site are sourced from third-party sources that we believe to be reliable, but we cannot guarantee their accuracy. You should independently verify any information before relying on it.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">4. "AS IS" Basis</h2>
               <p className="text-justify mb-3">
                 Our website and all services are provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind, either expressed or implied, including:
               </p>
@@ -38,7 +61,24 @@ export default function Disclaimer() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">3. Limitation of Liability</h2>
+              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">5. External Links Disclaimer</h2>
+              <p className="text-justify">
+                The Site may contain links to external websites that are not provided or maintained by, or in any way affiliated with, CL Global Media LLC. Please note that CL Global Media LLC does not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites. The inclusion of any links does not necessarily imply a recommendation or endorsement of the views expressed within them. We have no control over the nature, content, and availability of those sites.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">6. Testimonials & Results</h2>
+              <p className="text-justify mb-3">
+                The Site may contain testimonials from clients and descriptions of past results. These testimonials and results are not necessarily representative of the experience of other clients. Past results do not guarantee or imply similar results in the future.
+              </p>
+              <p className="text-justify">
+                Individual results will vary based on a range of factors, including but not limited to business size, market conditions, geographic location, and how our recommendations are implemented. We make no guarantee that you will achieve any particular result.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">7. Limitation of Liability</h2>
               <p className="text-justify mb-3">
                 To the fullest extent permitted by applicable law, CL Global Media LLC shall not be liable for:
               </p>
@@ -52,37 +92,14 @@ export default function Disclaimer() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">4. Accuracy of Information</h2>
-              <p className="text-justify mb-3">
-                While we strive to provide accurate and current information, CL Global Media LLC makes no representation regarding the:
-              </p>
-              <ul className="list-disc list-inside space-y-2 ml-4 mb-6">
-                <li>Accuracy, completeness, or timeliness of information on our Site</li>
-                <li>Accuracy of pricing information or product descriptions</li>
-                <li>Suitability of our services for your specific needs</li>
-              </ul>
+              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">8. Errors & Omissions</h2>
               <p className="text-justify">
-                Information may be outdated or contain errors. We recommend verifying all information independently before relying on it for important decisions.
+                While we make every effort to ensure the information on the Site is complete and accurate, errors and omissions may occur. If you find information on the Site that you believe is incorrect or outdated, please contact us and we will review and, where appropriate, correct the information.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">5. Third-Party Links and Content</h2>
-              <p className="text-justify mb-3">
-                Our Site may contain links to third-party websites, content, and resources that are not controlled by CL Global Media LLC. We are not responsible for:
-              </p>
-              <ul className="list-disc list-inside space-y-2 ml-4 mb-6">
-                <li>The availability or accuracy of third-party websites or content</li>
-                <li>The privacy practices or terms of service of third-party sites</li>
-                <li>Any damages or losses arising from your use of third-party websites or services</li>
-              </ul>
-              <p className="text-justify">
-                Inclusion of third-party links does not imply endorsement. We encourage you to review the terms and privacy policies of any third-party site before using their services.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">6. User-Generated Content</h2>
+              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">9. User-Generated Content</h2>
               <p className="text-justify mb-3">
                 If our Site allows you to submit content (such as comments, reviews, or feedback), you are solely responsible for:
               </p>
@@ -97,7 +114,7 @@ export default function Disclaimer() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">7. Viruses and Security</h2>
+              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">10. Viruses and Security</h2>
               <p className="text-justify mb-3">
                 We take reasonable precautions to prevent viruses and malicious content; however, CL Global Media LLC:
               </p>
@@ -109,21 +126,21 @@ export default function Disclaimer() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">8. Service Interruptions</h2>
+              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">11. Service Interruptions</h2>
               <p className="text-justify">
                 While we strive to maintain uninterrupted service, CL Global Media LLC is not liable for any interruptions, downtime, or unavailability of the Site due to server maintenance, technical issues, natural disasters, government actions, or circumstances beyond our reasonable control. We will make reasonable efforts to restore service promptly, but make no guarantees regarding timing or availability.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">9. Indemnification</h2>
+              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">12. Indemnification</h2>
               <p className="text-justify">
                 You agree to indemnify and hold harmless CL Global Media LLC and its officers, directors, employees, and agents from any claims, damages, losses, liabilities, or expenses (including reasonable attorneys' fees) arising from or related to your use of the Site, your violation of this Disclaimer, or your violation of applicable laws or the rights of third parties.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">10. Modifications</h2>
+              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">13. Modifications</h2>
               <p className="text-justify mb-3">
                 CL Global Media LLC reserves the right to modify, update, or remove any content, services, or features of the Site at any time, with or without notice. Such modifications include:
               </p>
@@ -138,21 +155,28 @@ export default function Disclaimer() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">11. Jurisdictional Issues</h2>
+              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">14. Fair Use Notice</h2>
+              <p className="text-justify">
+                The Site may contain copyrighted material the use of which has not always been specifically authorized by the copyright owner. We make such material available for educational and informational purposes. We believe this constitutes a "fair use" of any such copyrighted material as provided for in section 107 of the US Copyright Law. If you wish to use copyrighted material from the Site for your own purposes that go beyond fair use, you must obtain permission from the copyright owner. To report any copyright concerns, please contact us.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">15. Jurisdictional Issues</h2>
               <p className="text-justify">
                 The information and services provided on our Site are intended for use in jurisdictions where such services are legal. We do not represent that information on our Site is appropriate or available for use in all jurisdictions. If you access the Site from outside authorized jurisdictions, you do so at your own risk and are responsible for compliance with local laws.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">12. Governing Law</h2>
+              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">16. Governing Law</h2>
               <p className="text-justify">
                 This Disclaimer shall be governed by and construed in accordance with the laws of the United States, without regard to its conflict of law provisions. Your use of the Site constitutes acceptance of this Disclaimer and all other policies on our Site.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">13. Contact Information</h2>
+              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">17. Contact Information</h2>
               <p className="text-justify mb-4">
                 If you have questions about this Disclaimer or our policies, please contact us:
               </p>

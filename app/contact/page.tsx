@@ -112,15 +112,28 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                {/* Decorative Image */}
+                {/* Office Image */}
                 <div className="mt-12 relative aspect-video rounded-2xl overflow-hidden">
                   <Image
-                    src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=1920&auto=format&fit=crop"
-                    alt="Office"
+                    src="/images/contact-office.jpg"
+                    alt="CL Global Media Office Location"
                     fill
                     className="object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                </div>
+
+                {/* Google Map */}
+                <div className="mt-12 relative aspect-video rounded-2xl overflow-hidden border border-white/10">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1234567890!2d-74.0089843!3d40.7074502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e0ee2e99%3A0x1234567890abcdef!2s99%20Wall%20St%2C%20New%20York%2C%20NY%2010005!5e0!3m2!1sen!2sus!4v1234567890"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
                 </div>
               </div>
             </AnimatedSection>
