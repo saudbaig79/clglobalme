@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import Image from "next/image"
-import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react"
+import { Mail, Phone, MapPin, Send, CheckCircle, PhoneIcon } from "lucide-react"
 import { AnimatedSection } from "@/components/ui/animated-section"
 
 export default function ContactPage() {
@@ -82,6 +82,21 @@ export default function ContactPage() {
                 </p>
 
                 <div className="space-y-8">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-[#d4af37]/10 flex items-center justify-center flex-shrink-0">
+                      <Phone className="w-6 h-6 text-[#d4af37]" />
+                    </div>
+                    <div>
+                      <h3 className="text-white font-semibold mb-1">Phone</h3>
+                      <a 
+                        href="tel:+15852150461" 
+                        className="text-white/60 hover:text-[#d4af37] transition-colors"
+                      >
+                        +1 (585) 215-0461
+                      </a>
+                    </div>
+                  </div>
+
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-xl bg-[#d4af37]/10 flex items-center justify-center flex-shrink-0">
                       <Mail className="w-6 h-6 text-[#d4af37]" />
